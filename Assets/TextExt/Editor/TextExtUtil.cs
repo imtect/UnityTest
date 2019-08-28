@@ -17,6 +17,17 @@ public class TextExtUtil : Editor {
         textRoot.GetComponent<RectTransform>().sizeDelta = new Vector2(160, 30);
     }
 
+    [MenuItem("GameObject/UI/ImageExt")]
+    public static void CreateImageExt() {
+        GameObject imageRoot = new GameObject("Image", typeof(RectTransform), typeof(ImageExt));
+        ResetInCanvasFor((RectTransform)imageRoot.transform);
+        var imageExt = imageRoot.GetComponent<ImageExt>();
+        imageExt.overrideSprite = null;
+        imageExt.color = Color.white;
+        imageExt.transform.localPosition = Vector3.zero;
+        imageExt.GetComponent<RectTransform>().sizeDelta = new Vector2(100, 100);
+    }
+
     public static void TextSpacingGUI(SerializedProperty m_UseTextSpacing, SerializedProperty m_TextSpacing, ref bool m_TextSpacingPanelOpen) {
         LayoutF(() => {
             EditorGUILayout.PropertyField(m_UseTextSpacing);
