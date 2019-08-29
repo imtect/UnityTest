@@ -62,12 +62,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\ButtonExt\ButtonAttribute.cs" />
     <Compile Include="Assets\ButtonExt\ButtonExt.cs" />
     <Compile Include="Assets\ButtonExt\ButtonExtEditor.cs" />
-    <Compile Include="Assets\ButtonExt\ButtonExtUtil.cs" />
     <Compile Include="Assets\ImageExt\DrawCircle.cs" />
-    <Compile Include="Assets\ImageExt\ImageEditor.cs" />
     <Compile Include="Assets\ImageExt\ImageExt.cs" />
     <Compile Include="Assets\ImageExt\TestMask.cs" />
     <Compile Include="Assets\OpenDialog\Scripts\OpenExe.cs" />

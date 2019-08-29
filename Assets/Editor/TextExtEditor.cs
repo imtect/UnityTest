@@ -13,6 +13,7 @@ public class TextExtEditor : GraphicEditor {
     SerializedProperty m_text;
     SerializedProperty m_fontdata;
 
+
     //序列化属性
     SerializedProperty m_UseTextSpacing;
     SerializedProperty m_TextSpacing;
@@ -41,6 +42,18 @@ public class TextExtEditor : GraphicEditor {
     }
 
     private void ExtGUI() {
-        TextExtUtil.TextSpacingGUI(m_UseTextSpacing, m_TextSpacing, ref m_TextSpacingPanelOpen);
+        TextSpacingGUI(m_UseTextSpacing, m_TextSpacing, ref m_TextSpacingPanelOpen);
+    }
+
+    public void TextSpacingGUI(SerializedProperty m_UseTextSpacing, SerializedProperty m_TextSpacing, ref bool m_TextSpacingPanelOpen) {
+        EditorUtilExt.LayoutF(() => {
+            EditorGUILayout.PropertyField(m_UseTextSpacing);
+            if (m_UseTextSpacing.boolValue) {
+                EditorUtilExt.Space();
+                EditorUtilExt.LayoutH(() => {
+                    EditorGUI.PropertyField(EditorUtilExt.GUIRect(0, 18), m_TextSpacing, new GUIContent());
+                });
+            }
+        }, "Text Spacing", ref m_TextSpacingPanelOpen, true);
     }
 }

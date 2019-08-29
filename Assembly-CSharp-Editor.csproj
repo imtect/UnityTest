@@ -62,8 +62,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\TextExt\Editor\TextExtEditor.cs" />
-    <Compile Include="Assets\TextExt\Editor\TextExtUtil.cs" />
+    <Compile Include="Assets\Editor\EditorUtilExt.cs" />
+    <Compile Include="Assets\Editor\ImageExtEditor.cs" />
+    <Compile Include="Assets\Editor\TextExtEditor.cs" />
     <Compile Include="Assets\UGUIPlus\Editor\EditorUtil.cs" />
     <Compile Include="Assets\UGUIPlus\Editor\TextPlusEditor.cs" />
     <Reference Include="UnityEditor.TestRunner">

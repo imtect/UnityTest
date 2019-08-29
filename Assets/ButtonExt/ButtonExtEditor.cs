@@ -1,18 +1,34 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
+using UnityEditor.UI;
 
-public class ButtonExtEditor : MonoBehaviour
+
+[CustomEditor(typeof(ButtonExt),true)]
+[CanEditMultipleObjects]
+public class ButtonExtEditor : ButtonEditor
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+
+    SerializedProperty m_Test;
+
+    protected override void OnEnable() {
+        base.OnEnable();
+
+        m_Test = serializedObject.FindProperty("Test");
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    protected override void OnDisable() {
+        base.OnDisable();
+    }
+
+    public override void OnInspectorGUI() {
+        base.OnInspectorGUI();
+
+        EditorGUILayout.Space();
+
+        serializedObject.Update();
+        EditorGUILayout.PropertyField(m_Test);
+        serializedObject.ApplyModifiedProperties();
     }
 }

@@ -5,7 +5,11 @@ using UnityEngine.UI;
 using UnityEditor;
 using UnityEditor.UI;
 
+[AddComponentMenu("UI/ButtonExt")]
 public class ButtonExt : Button
 {
-    
+
+    [SerializeField]
+    [Range(1,100)]
+    public float Test = 1;
 }
