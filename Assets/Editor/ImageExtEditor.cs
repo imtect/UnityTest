@@ -97,13 +97,12 @@ public class ImageExtEditor : ImageEditor {
             EditorUtilExt.LayoutGroup(m_ShowCircle, () => {
                 EditorGUILayout.PropertyField(m_SegmentCount);
                 EditorGUILayout.PropertyField(m_FillPercent);
-                EditorGUILayout.PropertyField(m_Full);
             });
-            EditorUtilExt.LayoutGroup(m_ShowTilletRect, () => {
+            EditorUtilExt.LayoutGroup(m_ShowRing, () => {
                 EditorGUILayout.PropertyField(m_SegmentCount);
                 EditorGUILayout.PropertyField(m_Thickness);
             });
-            EditorUtilExt.LayoutGroup(m_ShowRing, () => {
+            EditorUtilExt.LayoutGroup(m_ShowTilletRect, () => {
                 EditorGUILayout.PropertyField(m_FilletSegments);
                 EditorGUILayout.PropertyField(m_FilletRadius);
             });
