@@ -64,9 +64,8 @@
   <ItemGroup>
     <Compile Include="Assets\ButtonExt\ButtonExt.cs" />
     <Compile Include="Assets\ButtonExt\ButtonExtEditor.cs" />
-    <Compile Include="Assets\ImageExt\DrawCircle.cs" />
     <Compile Include="Assets\ImageExt\ImageExt.cs" />
-    <Compile Include="Assets\ImageExt\TestMask.cs" />
+    <Compile Include="Assets\ImageExt\Test.cs" />
     <Compile Include="Assets\OpenDialog\Scripts\OpenExe.cs" />
     <Compile Include="Assets\OpenDialog\Scripts\OpenFileDialog.cs" />
     <Compile Include="Assets\TextExt\Scripts\TextExt.cs" />
@@ -79,31 +78,31 @@
     <Compile Include="Assets\UGUIPlus\Core\Scripts\TextPlus.cs" />
     <None Include="Assets\UGUIPlus\Fonts\Jupiter\LICENSE.txt" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>E:/7_GitHub/UnityTest/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>E:/git/UnityTest/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>E:/7_GitHub/UnityTest/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>E:/git/UnityTest/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>E:/7_GitHub/UnityTest/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>E:/git/UnityTest/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>E:/7_GitHub/UnityTest/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>E:/git/UnityTest/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>E:/7_GitHub/UnityTest/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>E:/git/UnityTest/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>E:/7_GitHub/UnityTest/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>E:/git/UnityTest/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>E:/7_GitHub/UnityTest/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>E:/git/UnityTest/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>E:/7_GitHub/UnityTest/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>E:/git/UnityTest/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>E:/7_GitHub/UnityTest/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>E:/git/UnityTest/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

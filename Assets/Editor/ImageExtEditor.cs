@@ -9,6 +9,8 @@ public class ImageExtEditor : ImageEditor {
     SerializedProperty m_Sprite;
     SerializedProperty m_ImageShape;
 
+    SerializedProperty m_isDragValide;
+
     //Circle
     SerializedProperty m_SegmentCount;
     SerializedProperty m_FillPercent;
@@ -32,6 +34,9 @@ public class ImageExtEditor : ImageEditor {
         base.OnEnable();
 
         m_Sprite = serializedObject.FindProperty("m_Sprite");
+
+        m_isDragValide = serializedObject.FindProperty("m_isDragValid");
+
         m_ImageShape = serializedObject.FindProperty("m_ImageShape");
 
         m_SegmentCount = serializedObject.FindProperty("m_SegmentCount");
@@ -76,6 +81,8 @@ public class ImageExtEditor : ImageEditor {
 
         EditorGUILayout.Space();
 
+        EditorGUILayout.PropertyField(m_isDragValide,new GUIContent("Dragable"));
+
         m_ShowShape.target = m_Sprite.objectReferenceValue != null;
         EditorUtilExt.LayoutGroup(m_ShowShape, () => { ShapeGUI(); });
 
@@ -103,7 +110,7 @@ public class ImageExtEditor : ImageEditor {
                 EditorGUILayout.PropertyField(m_Thickness);
             });
             EditorUtilExt.LayoutGroup(m_ShowTilletRect, () => {
-                EditorGUILayout.PropertyField(m_FilletSegments);
+                //EditorGUILayout.PropertyField(m_FilletSegments);
                 EditorGUILayout.PropertyField(m_FilletRadius);
             });
         }
