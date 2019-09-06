@@ -6,7 +6,7 @@ using UnityEditor.AnimatedValues;
 
 public class EditorUtilExt : Editor {
 
-    [MenuItem("GameObject/UI/TextExt")]
+    [MenuItem("GameObject/UI/UIExt/TextExt")]
     public static void CreateTextExt() {
         GameObject textRoot = new GameObject("Text", typeof(RectTransform), typeof(TextExt));
         ResetInCanvasFor((RectTransform)textRoot.transform);
@@ -18,7 +18,7 @@ public class EditorUtilExt : Editor {
         textRoot.GetComponent<RectTransform>().sizeDelta = new Vector2(160, 30);
     }
 
-    [MenuItem("GameObject/UI/ImageExt")]
+    [MenuItem("GameObject/UI/UIExt/ImageExt")]
     public static void CreateImageExt() {
         GameObject imageRoot = new GameObject("Image", typeof(RectTransform), typeof(ImageExt));
         ResetInCanvasFor((RectTransform)imageRoot.transform);
@@ -29,8 +29,17 @@ public class EditorUtilExt : Editor {
         imageExt.GetComponent<RectTransform>().sizeDelta = new Vector2(100, 100);
     }
 
-    [MenuItem("GameObject/UI/ButtonExt")]
+    [MenuItem("GameObject/UI/UIExt/ButtonExt")]
     public static void CreateButtonExt() {
+        GameObject imageRoot = new GameObject("Button", typeof(RectTransform), typeof(ButtonExt));
+        ResetInCanvasFor((RectTransform)imageRoot.transform);
+        var btnExt = imageRoot.GetComponent<ButtonExt>();
+        btnExt.transform.localPosition = Vector3.zero;
+        btnExt.GetComponent<RectTransform>().sizeDelta = new Vector2(160, 30);
+    }
+
+    [MenuItem("GameObject/UI/UIExt/ScrollRectExt")]
+    public static void CreateScrollRectExt() {
         GameObject imageRoot = new GameObject("Button", typeof(RectTransform), typeof(ButtonExt));
         ResetInCanvasFor((RectTransform)imageRoot.transform);
         var btnExt = imageRoot.GetComponent<ButtonExt>();
